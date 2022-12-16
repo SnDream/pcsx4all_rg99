@@ -832,6 +832,11 @@ void pad_update()
 		}
 #endif
 	}
+#ifdef RG99
+	if (keys[SDLK_ESCAPE] && keys[SDLK_RETURN]) {
+		popup_menu = true;
+	}
+#endif
 
 	// popup main menu
 	if (popup_menu) {
